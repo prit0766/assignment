@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Details</title>
+    <link rel="stylesheet" href="Form.css">
+	<style>
+	.user_form{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(41, 153, 0, 0.874);
+}
+
+.ipt{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(131, 228, 138, 0.388);
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.ipt input{
+    margin:10px;
+}
+.cnt{
+    width: 100%;
+    /* background-color: rgba(141, 144, 146, 0.388); */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.crdn{
+    width: 100%;
+    /* background-color: rgba(141, 144, 146, 0.388); */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.ipt label{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    /* text-align: right; */
+    margin-right: 20px;
+}
+
+.ipt input{
+    
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 70px;
+}
+
+.txt label{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    /* text-align: right; */
+    margin-right: 5px;
+}
+
+.txt textarea{
+    width: 300px;
+    height: 70px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin:10px 0px 0px 65px;
+}
+
+.txt{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(131, 228, 138, 0.388);
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.pstc{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(131, 228, 138, 0.388);
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.pstc input{
+    margin: 10px;
+}
+.pstc label{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    /* text-align: right; */
+    margin-right: 5px;
+}
+
+.pstc input{
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 60px;  
+}
+.cnt{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(131, 228, 138, 0.388);
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.cnt input{
+    margin: 10px;
+}
+.cnt label{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    /* text-align: right; */
+    margin-right: 5px;
+}
+
+
+.type{
+    height: 70px;
+    width: 100%;
+    background-color: rgba(131, 228, 138, 0.388);
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.type input{
+    margin: 10px;
+}
+.cnt input{
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 70px;  
+}
+
+.type label{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    /* text-align: right; */
+    margin-right: 5px;
+}
+
+.type input{
+   width: 20px;
+   height: 20px;
+}
+
+.type span{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.crdn{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(131, 228, 138, 0.388);
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.crdn input{
+    margin: 10px;
+}
+.crdn label{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    /* text-align: right; */
+    margin-right: 10px;
+}
+
+.crdn input{
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 20px;  
+}
+.chn label{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    /* text-align: right; */
+    margin-right: 5px;
+}
+.chn{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(131, 228, 138, 0.388);
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.chn input{
+    margin: 10px;
+}
+.chn input{
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 38px;  
+}
+
+.btn {
+    background-color: #44560d;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+	</style>
+</head>
+<body>
+    
+<div class="user_form">
+
+    <form action="" method="post" >
+
+        <h2>Step 1 : Your Details</h2>
+
+        <div class="ipt">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="First name and last name" required />
+        </div>
+
+        <div class="ipt">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@domain.com">
+        </div>
+
+        <div class="ipt">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="Eg. +917676717617">
+        </div>
+
+        <h2>Step 2 : Delivery Address</h2>
+
+        <div class="txt">
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="pstc">
+            <label for="postcode">Post code</label>
+            <input type="number" name="postcode" id="postcode"></label>
+        </div>
+
+        
+        <div class="cnt">
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" />
+        </div>
+        
+        <h2>Step 3 : Card Details</h2>
+
+        <div class="type">
+            <label for="cardtype">Card Type</label> <br>
+            <input type="radio" name="cardtype" id="cardtype" value="Visa"> <img src="img/visa.png" width="30px" height="15px" alt=""> <span>VISA </span>
+            <input type="radio" name="cardtype" id="cardtype" value="AmEx"> <img src="./img/amex.png" width="30px" height="15px" alt=""> <span>AmEx</span>
+            <input type="radio" name="cardtype" id="cardtype" value="American Express"> <img src="./img/mastercard.png" width="30px" height="15px" alt=""> <span>AMERICAN EXPRESS</span>  <br>
+        </div>
+
+        <div class="crdn"> 
+            <label for="cardnum">Card Number</label>
+            <input type="number" name="cardnum" id="cardnum" />   
+        </div>
+
+        <div class="crdn">
+        <label for="sec_code">Security Code</label>
+        <input type="number" name="sec-code" id="sec_code" />
+         </div>
+
+         <div class="chn">
+        <label for="card_holder">Card Holder</label>
+        <input type="text" name="card_holder" id="card_holder" placeholder="Exact name as on card">
+        </div>
+
+        <button class="btn" type="submit">BUY IT!</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
+
+
+
+<br>
